@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: overpass;
+}
+.con {
+  height: 100vh;
+  background: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background: hsl(213, 19%, 18%);
+  width: 500px;
+  height: 475px;
+  border-radius: 10%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "star"
+    "title"
+    "paragraph"
+    "buttons"
+    "submit";
+}
+.card-star {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: hsl(216, 12%, 20%);
+  grid-area: star;
+  position: relative;
+  left: 50px;
+  top: 40px;
+}
+.card-title {
+  font-weight: 700;
+  color: white;
+  font-size: 30px;
+  grid-area: title;
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+.card-paragraph {
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  white-space: 5px;
+  grid-area: paragraph;
+  position: relative;
+  left: 50px;
+}
+.card-btn {
+  width: 420px;
+  position: relative;
+  left: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  grid-area: buttons;
+}
+.btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: hsl(216, 12%, 20%);
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.card-submit {
+  height: 50px;
+  width: 400px;
+  background: hsl(25, 97%, 53%);
+  color: white;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px 100px 100px 100px;
+  grid-area: submit;
+  position: relative;
+  left: 50px;
+  cursor: pointer;
+}
+.card-submit:hover {
+  background: white;
+  color: hsl(25, 97%, 53%);
+}
